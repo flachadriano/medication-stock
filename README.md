@@ -1,6 +1,7 @@
 Projeto para controle de estoque de medicamentos
 
 Índice
+- [Como proceder](#como-proceder)
 - [Casos de uso](#casos-de-uso)
   - [Requisito 1 - Tela inicial](#requisito-1---tela-inicial)
   - [Requisito 2 - Botões da tela inicial](#requisito-2---bot%c3%b5es-da-tela-inicial)
@@ -8,6 +9,12 @@ Projeto para controle de estoque de medicamentos
   - [Requisito 4 - Informar estoque](#requisito-4---informar-estoque)
   - [Requisito 5 - Calcular média](#requisito-5---calcular-m%c3%a9dia)
 - [Requisitos não funcionais](#requisitos-n%c3%a3o-funcionais)
+
+# Como proceder
+
+Passo 1 - Crie um fork deste projeto
+Passo 2 - Implemente os Casos de uso e os requisitos não funcionais
+Passo 3 - Criar um pull request com a proposta de solução
 
 # Casos de uso
 
