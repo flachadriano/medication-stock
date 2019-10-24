@@ -13,7 +13,9 @@ Projeto para controle de estoque de medicamentos
 # Como proceder
 
 Passo 1 - Crie um fork deste projeto
+
 Passo 2 - Implemente os Casos de uso e os requisitos não funcionais
+
 Passo 3 - Criar um pull request com a proposta de solução
 
 # Casos de uso
