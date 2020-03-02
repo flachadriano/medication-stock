@@ -1,0 +1,83 @@
+<div>
+    <span>Aquisições</span>
+</div>
+<div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-6">
+        <label>Quantidade primeiro trimestre</label>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon">
+                <fa-icon [icon]="faShoppingBasket"></fa-icon>
+            </span>
+            <input type="text" pInputText placeholder="Nome" [(ngModel)]="purchase.firstQuarterQuantity">
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-6">
+        <label>Preço primeiro trimestre</label>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon">
+                <fa-icon [icon]="faMoneyBillAlt"></fa-icon>
+            </span>
+            <input type="text" pInputText placeholder="Nome" [(ngModel)]="purchase.firstQuarterPrice">
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-6">
+        <label>Quantidade segundo trimestre</label>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon">
+                <fa-icon [icon]="faShoppingBasket"></fa-icon>
+            </span>
+            <input type="text" pInputText [(ngModel)]="purchase.secondQuarterQuantity">
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-6">
+        <label>Preço segundo trimestre</label>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon">
+                <fa-icon [icon]="faMoneyBillAlt"></fa-icon>
+            </span>
+            <input type="text" pInputText [(ngModel)]="purchase.secondQuarterPrice">
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-6">
+        <label>Quantidade terceiro trimestre</label>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon">
+                <fa-icon [icon]="faShoppingBasket"></fa-icon>
+            </span>
+            <input type="text" pInputText [(ngModel)]="purchase.thirdQuarterQuantity">
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-6">
+        <label>Preço terceiro trimestre</label>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon">
+                <fa-icon [icon]="faMoneyBillAlt"></fa-icon>
+            </span>
+            <input type="text" pInputText [(ngModel)]="purchase.thirdQuarterPrice">
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-6">
+        <label>Quantidade quarto trimestre</label>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon">
+                <fa-icon [icon]="faShoppingBasket"></fa-icon>
+            </span>
+            <input type="text" pInputText [(ngModel)]="purchase.fourthQuarterQuantity">
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-6">
+        <label>Preço quarto trimestre</label>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon">
+                <fa-icon [icon]="faMoneyBillAlt"></fa-icon>
+            </span>
+            <input type="text" pInputText [(ngModel)]="purchase.fourthQuarterPrice">
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-2">
+        <button pButton type="button" label="Salvar" (click)="onSave()"></button>
+    </div>
+    <div class="ui-g-12 ui-md-2">
+        <button pButton type="button" label="Cancelar" (click)="onCancel()"></button>
+    </div>
+</div>

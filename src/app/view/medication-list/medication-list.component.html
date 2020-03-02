@@ -1,0 +1,30 @@
+<p-table #dt [value]="medications" selectionMode="single" [(selection)]="selectedMedication">
+    <ng-template pTemplate="header">
+        <tr>
+            <th *ngFor="let column of columns" [pSortableColumn]="column.field" [ngSwitch]="column.field">
+                {{column.header}}
+                <p-sortIcon [field]="column.field"></p-sortIcon>
+                <input *ngSwitchCase="'name'" pInputText type="text" class="ui-column-filter" style="width: 100%;"
+                    (input)="dt.filter($event.target.value, column.field, 'contains')">
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-medication>
+        <tr [pSelectableRow]="medication">
+            <td *ngFor="let column of columns">
+                {{medication[column.field]}}
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
+<div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-2">
+        <button pButton type="button" label="Adicionar" (click)="onAdd()"></button>
+    </div>
+    <div class="ui-g-12 ui-md-2">
+        <button pButton type="button" label="Editar" (click)="onEdit()"></button>
+    </div>
+    <div class="ui-g-12 ui-md-2">
+        <button pButton type="button" label="Movimentação" (click)="onPurchase()"></button>
+    </div>
+</div>
